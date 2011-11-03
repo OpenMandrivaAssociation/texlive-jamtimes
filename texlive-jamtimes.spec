@@ -1,3 +1,9 @@
+# revision 20408
+# category Package
+# catalog-ctan /fonts/jamtimes
+# catalog-date 2009-11-07 09:52:42 +0000
+# catalog-license other-free
+# catalog-version 1.12
 Name:		texlive-jamtimes
 Version:	1.12
 Release:	1
@@ -151,6 +157,7 @@ Belleek fonts.
 %doc %{_texmfdistdir}/doc/latex/jamtimes/textsample.pdf
 %doc %{_texmfdistdir}/doc/latex/jamtimes/textsample.tex
 %doc %{_texmfdistdir}/doc/latex/jamtimes/textsample_ps.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -161,3 +168,5 @@ Belleek fonts.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
