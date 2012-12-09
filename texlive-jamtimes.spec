@@ -158,3 +158,17 @@ Belleek fonts.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.12-2
++ Revision: 752893
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.12-1
++ Revision: 718748
+- texlive-jamtimes
+- texlive-jamtimes
+- texlive-jamtimes
+- texlive-jamtimes
+
