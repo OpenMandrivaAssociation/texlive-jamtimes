@@ -6,7 +6,7 @@
 # catalog-version 1.12
 Name:		texlive-jamtimes
 Version:	1.12
-Release:	5
+Release:	6
 Summary:	Expanded Times Roman fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/jamtimes
