@@ -1,18 +1,12 @@
-# revision 20408
-# category Package
-# catalog-ctan /fonts/jamtimes
-# catalog-date 2009-11-07 09:52:42 +0000
-# catalog-license other-free
-# catalog-version 1.12
 Name:		texlive-jamtimes
-Version:	1.12
-Release:	12
+Version:	20408
+Release:	1
 Summary:	Expanded Times Roman fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/jamtimes
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jamtimes.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jamtimes.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jamtimes.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jamtimes.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ d'Analyse Mathematique. Mathematics support is based on the
 Belleek fonts.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -151,24 +145,10 @@ Belleek fonts.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.12-2
-+ Revision: 752893
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.12-1
-+ Revision: 718748
-- texlive-jamtimes
-- texlive-jamtimes
-- texlive-jamtimes
-- texlive-jamtimes
-
