@@ -1,6 +1,6 @@
 Name:		texlive-jamtimes
 Version:	20408
-Release:	1
+Release:	2
 Summary:	Expanded Times Roman fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/jamtimes
