@@ -3,7 +3,7 @@ Version:	20408
 Release:	2
 Summary:	Expanded Times Roman fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/jamtimes
+URL:		https://www.ctan.org/tex-archive/fonts/jamtimes
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jamtimes.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/jamtimes.doc.r%{version}.tar.xz
